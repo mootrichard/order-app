@@ -1,0 +1,151 @@
+legend {
+  margin-top: 24px;
+  color: #5C6B7D!important;
+  font-size: 16px!important;
+}
+
+/* Define how SqPaymentForm iframes should look */
+.sq-input {
+  font-family: "Helvetica", sans-serif; /* can't use custom fonts! major bummer :'( */
+  font-weight: normal;
+  height: 56px; /* 56 minus 14px top/bottom padding */
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border: 1px solid #D6D7D8;
+  transition: border-color .2s ease-in-out;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+}
+
+.sq-input.full {
+  width: 456px; /* minus left/right padding from .sq-input */
+}
+
+/* duplicate code for non-iframe inputs */
+.sq-input:focus {
+  outline: none;
+  border: 1px solid #4A90E2 !important;
+}
+
+/* Define how SqPaymentForm iframes should look when they have focus */
+.sq-input--focus {
+  outline: none;
+  border: 1px solid #4A90E2 !important;
+}
+
+/* Define how SqPaymentForm iframes should look when they contain invalid values */
+.sq-input--error {
+  outline: none;
+  border: 1px solid #E02F2F;
+}
+
+#sq-postal-code {
+  width: 146px;
+  height: 56px;
+  margin-left: 9px;
+}
+
+#sq-ccbox {
+  width: 100%;
+}
+
+/* card field lockup */
+#sq-card-number {
+  width: 456px;
+  height: 56px;
+}
+
+#sq-cvv {
+  width: 146px;
+  height: 56px;
+}
+
+#sq-expiration-date {
+  width: 146px; /* minus left/right padding from .sq-input */
+  margin-left: 9px;
+}
+
+
+/* Customize the "Pay with Credit Card" button */
+.button-credit-card {
+  /* display: block; */
+  margin: 6px 0;
+  height: 56px;
+  text-align: center;
+  padding: 14px 0 14px 0;
+  width: 176px;
+  font-family: SQMarket-Medium, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0EA50E;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+
+  -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+
+.button-credit-card:hover {
+  background-color: #0B8C0B;
+}
+
+.button-credit-card:focus {
+  box-shadow: 0 0 5px 0 #0EA50E;
+}
+
+/* Customize the Apple Pay on the Web button */
+#sq-apple-pay {
+  display: inline-block;
+  width: 176px;
+  margin: 6px 0;
+  background-image: url('../images/ApplePay.png');
+  background-color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Customize the Masterpass button */
+#sq-masterpass {
+  display: inline-block;
+  width: 176px;
+  height: 56px;
+  padding: 0;
+  margin: 6px 0;
+  background-image: url("../images/MasterPass.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Customize the Google Pay button */
+#sq-google-pay {
+  display: inline-block;
+  min-height: 56px;
+  width: 176px;
+  /* padding: 11px 24px; */
+  margin: 6px 0;
+  background-color: #000;
+  background-image: url('../images/GPay.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  cursor: pointer;
+}

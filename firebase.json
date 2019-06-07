@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "/square/**",
+        "function": "square"
+      },
+      {
+        "source": "/catalog",
+        "function": "catalog"
+      },
+      {
+        "source": "/pay",
+        "function": "pay"
+      }
+    ],
+    "ignore": [
+      ".env",
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
