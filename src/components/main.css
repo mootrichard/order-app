@@ -450,7 +450,7 @@ header {
 
 #paymentDetails {
     width: 520px;
-    height: 438px;
+    /* height: 438px; */
     padding: 24px 32px 46px 32px;
     float: left;
     margin: 12px;

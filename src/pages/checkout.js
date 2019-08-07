@@ -229,7 +229,7 @@ class Checkout extends Component {
   }
 
   render(){
-    const { cartItem } = this.state;
+    const { cartItem, googlePay, applePay, masterpass } = this.state;
     return (
       <Layout displayBack={true}>
         <div className="">
@@ -242,7 +242,7 @@ class Checkout extends Component {
           </header> */}
           <h1 className="pageTitle">Review &amp; Complete Your Order</h1>
           <div style={{width: '960px', margin: '0 auto'}} className="">
-          <PaymentDetails handleChange={this.handleChange} />
+          <PaymentDetails handleChange={this.handleChange} requestCardNonce={this.requestCardNonce} googlePay={googlePay} applePay={applePay} masterpass={masterpass} />
           <OrderSummary cartItem={cartItem} />
           <div style={{
             width: '376px',
@@ -250,12 +250,12 @@ class Checkout extends Component {
             float: 'left',
             padding: 0
           }}>
-          <div className="button-grid">
+          {/* <div className="button-grid">
             <button id="sq-creditcard" className="button-credit-card" onClick={this.requestCardNonce}>Pay with Card</button>
             <button style={{ display: this.state.googlePay ? "inline-block" : "none" }} id="sq-google-pay" name="sq-google-pay" className="sq-input full" ></button>
             <button style={{ display: this.state.applePay ? "inline-block" : "none" }} id="sq-apple-pay" name="sq-apple-pay" className="sq-input full" ></button>
             <button style={{ display: this.state.masterpass ? "inline-block" : "none" }} id="sq-masterpass" name="sq-masterpass" className="sq-input full" ></button>
-          </div>
+          </div> */}
           </div>
           </div>
         </div>

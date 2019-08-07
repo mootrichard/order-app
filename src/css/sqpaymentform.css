@@ -101,8 +101,9 @@ legend {
   box-shadow: 0 0 5px 0 #0EA50E;
 }
 
+
 /* Customize the Apple Pay on the Web button */
-#sq-apple-pay {
+/* #sq-apple-pay {
   display: inline-block;
   width: 176px;
   margin: 6px 0;
@@ -113,10 +114,10 @@ legend {
   background-position: center;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 /* Customize the Masterpass button */
-#sq-masterpass {
+/* #sq-masterpass {
   display: inline-block;
   width: 176px;
   height: 56px;
@@ -129,14 +130,13 @@ legend {
   background-size: 100%;
   border-radius: 4px;
   cursor: pointer;
-}
+} */
 
 /* Customize the Google Pay button */
-#sq-google-pay {
+/* #sq-google-pay {
   display: inline-block;
   min-height: 56px;
   width: 176px;
-  /* padding: 11px 24px; */
   margin: 6px 0;
   background-color: #000;
   background-image: url('../images/GPay.png');
@@ -148,4 +148,4 @@ legend {
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
   cursor: pointer;
-}
+} */
